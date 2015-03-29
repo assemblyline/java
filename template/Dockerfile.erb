@@ -1,0 +1,4 @@
+FROM quay.io/assemblyline/ubuntu:14.04.2
+
+ENV <%= data['env'].map { |var,val| "#{var}=#{val}" }.join(' ') %>
+RUN <%= data['script'].join(" \\\n && ") %>
