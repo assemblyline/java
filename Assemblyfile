@@ -1,0 +1,13 @@
+[component]
+name = 'Java'
+repo = 'quay.io/assemblyline/java'
+
+[[component.version]]
+version   = '1.8.0'
+package   = 'oracle-java8-installer'
+java_home = '/usr/lib/jvm/java-8-oracle'
+
+[[component.version]]
+version   = '1.7.0'
+package   = 'oracle-java7-installer'
+java_home = '/usr/lib/jvm/java-7-oracle'
